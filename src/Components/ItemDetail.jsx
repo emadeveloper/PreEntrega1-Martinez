@@ -7,7 +7,6 @@ const ItemDetail = () => {
     };
     return(
         <div>
-            <h1>ItemDetail</h1>
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
         </div>
     );

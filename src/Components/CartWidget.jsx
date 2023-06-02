@@ -15,11 +15,9 @@ return (
                 display: inline-block;
                 position: relative;
                 }
-
                 .cart-icon {
                 color: white;
                 }
-
                 .item-count {
                 position: absolute;
                 top: -8px;
