@@ -8,7 +8,13 @@ const ItemList = ({products}) => {
             <Row>
                 {products.map((product) => (
                     <Col>
-                        <Item key={product.id} title={product.title} price={product.price} stock={product.stock} img={product.img}/>
+                        <Item
+                            key={product.id} 
+                            id={product.id} 
+                            title={product.title} 
+                            price={product.price} 
+                            stock={product.stock} 
+                            img={product.img}/>
                     </Col>
                 ))};
             </Row>

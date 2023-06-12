@@ -3,7 +3,7 @@ import ItemCount from "../itemcount/ItemCount";
 import { Row, Col, Card } from 'react-bootstrap';
 import Imagen from "../../../assets/musculosa.png";
 
-const ItemDetail = (product) => {
+const ItemDetail = ({product}) => {
 
     return(
         <Row>
