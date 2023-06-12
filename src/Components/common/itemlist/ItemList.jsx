@@ -1,14 +1,14 @@
 import React from "react";
-import Item from "./Item";
+import Item from "../item/Item";
 import { Container, Row, Col } from 'react-bootstrap';
 
-const ItemList = (props) => {
+const ItemList = ({products}) => {
     return(
         <Container>
             <Row>
-                {props.products.map((product) => (
+                {products.map((product) => (
                     <Col>
-                        <Item key={product.id} title={product.title} price={product.price} stock={product.stock}/>
+                        <Item key={product.id} title={product.title} price={product.price} stock={product.stock} img={product.img}/>
                     </Col>
                 ))};
             </Row>

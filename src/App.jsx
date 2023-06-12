@@ -1,19 +1,24 @@
-import React from 'react';
-import NavBar from './Components/NavBar';
-import ItemListContainer from './Components/ItemListContainer';
-import ItemDetailContainer from './Components/ItemDetailContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
+import Footer from './Components/common/footer/Footer';
+import Home from './pages/home';
+import NavBar from './Components/common/navbar/NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Cart from './pages/cart';
+import ItemDetailContainer from './Components/Containers/ItemDetailContainer';
 
 function App() {
   return (
-    <>
+  <>
+    <BrowserRouter>
       <NavBar />
-      <ItemListContainer greeting={'Bienvenido a Fitness Outlet'} />
-      <ItemDetailContainer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:categoryId" element={<Home />} />
+        <Route path="item/itemId" element={<ItemDetailContainer />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  </>
   );
 }
 
