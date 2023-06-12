@@ -4,7 +4,7 @@ const data = [
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 15.000",
         stock: "stock disponible 20",
-        img: "../assets/musculosa.png",
+        img: "./assets/musculosa.png",
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos"
     },
@@ -74,8 +74,8 @@ const data = [
     {
         id: 9,
         title: "Pantalon Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 5.000",
+        stock: "stock disponible 4",
         img: "img/musculosa.png",
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos" 
@@ -83,8 +83,8 @@ const data = [
     {
         id: 10,
         title: "Pantalon Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 7.000",
+        stock: "stock disponible 5",
         img: "img/musculosa.png",
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos"  
@@ -92,8 +92,8 @@ const data = [
     {
         id: 11,
         title: "Pantalon Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 12.000",
+        stock: "stock disponible 20",
         img: "img/musculosa.png",
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos" 
@@ -101,8 +101,8 @@ const data = [
     {
         id: 12,
         title: "Pantalon Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 15.000",
+        stock: "stock disponible 19",
         img: "img/musculosa.png",
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos"  
@@ -111,7 +111,7 @@ const data = [
         id: 13,
         title: "Buzo Universal La Resistencia Fitness",
         price: "$ 18.000",
-        stock: "stock disponible 30",
+        stock: "stock disponible 6",
         img: "img/musculosa.png",
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym"  
@@ -119,8 +119,8 @@ const data = [
     {
         id: 14,
         title: "Buzo Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 8.000",
+        stock: "stock disponible 10",
         img: "img/musculosa.png",
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym"
@@ -128,8 +128,8 @@ const data = [
     {
         id: 15,
         title: "Buzo Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 11.000",
+        stock: "stock disponible 13",
         img: "img/musculosa.png",
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym" 
@@ -137,8 +137,8 @@ const data = [
     {
         id: 16,
         title: "Buzo Universal La Resistencia Fitness",
-        price: "$ 18.000",
-        stock: "stock disponible 30",
+        price: "$ 14.000",
+        stock: "stock disponible 20",
         img: "img/musculosa.png",
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym" 

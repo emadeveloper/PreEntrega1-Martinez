@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="footer__container__links">
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/ItemListContainer">Productos</NavLink></li>
+                        <li><NavLink to="/">Productos</NavLink></li>
                         <li><NavLink to="/contacto">Contacto</NavLink></li>
                     </ul>
                 </div>

@@ -5,21 +5,19 @@ import { useParams } from "react-router-dom";
 
 
 const ItemDetailContainer = () => {
-        const [product, setProduct] = useState(null);
+        const [product, setProduct] = useState({});
         const {itemId} = useParams();
 
         useEffect(() => {
-            const getProductId = () => {
-                return new Promise((resolve) => {
+            const getProduct = new Promise(resolve => {
                     setTimeout(() => {
-                        resolve(data.find((item) => item.id === 1));
+                        resolve(data);
                     }, 2000);
                 });
-            };
-        getProductId(itemId)
-            .then(result => {setProduct(result)})
-            .catch(error => {console.error(error)});
-    },[itemId]);
+                getProduct.then(res =>
+                    setProduct(res.find(item => item.id === parseInt(itemId))))
+                
+        },[itemId]);
 
     
     return(

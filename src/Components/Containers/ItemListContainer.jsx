@@ -13,11 +13,10 @@ import { useParams } from "react-router-dom";
             const getProducts = new Promise(resolve => {
                     setTimeout(() => {
                         resolve(data);
-                    }, 2000);
+                    }, 1000);
                 });
                 if (categoryId) {getProducts.then(result => 
                         setProducts(result.filter(product => product.category === categoryId)))
-                    .catch(error => {console.error(error)});
                 } 
                 else {
                     getProducts.then(result => setProducts(result));
