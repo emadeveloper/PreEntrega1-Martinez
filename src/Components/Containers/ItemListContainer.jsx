@@ -4,8 +4,9 @@ import ItemList from "../common/itemlist/ItemList";
 import data from "../../data.js"
 import Imagen from "../../assets/hero-img.jpg";
 import { useParams } from "react-router-dom";
+import './container-styles/item-list-container-styles.css'
 
-    const ItemListContainer = ({greeting}) => {
+    const ItemListContainer = () => {
         const [products, setProducts] = useState([]);
         const {categoryId} = useParams();
         
@@ -13,24 +14,24 @@ import { useParams } from "react-router-dom";
             const getProducts = new Promise(resolve => {
                     setTimeout(() => {
                         resolve(data);
-                    }, 1000);
+                    }, 2000);
                 });
                 if (categoryId) {getProducts.then(result => 
-                        setProducts(result.filter(product => product.category === categoryId)))
+                        setProducts(result.filter(product => product.category === categoryId)));
                 } 
                 else {
                     getProducts.then(result => setProducts(result));
-                    }
+                    };
         }, [categoryId]);
                 
 
     return (
     <>
-            <Container fluid>
+        <Container fluid>
                 <Row className="justify-content-center align-items-center h-100">
                 <Col xs={12} className="text-center">
-                    <h2 className="my-heading"> {greeting} </h2>
-                    <img width={1200} height={500} src={Imagen} alt="hero" />
+                    
+                    <img className="hero-img" src={Imagen} alt="hero" />
                     <h2 className="my-heading" > Nuestro Catalogo </h2>
                 </Col>
                 <ItemList products={products} />
@@ -39,8 +40,5 @@ import { useParams } from "react-router-dom";
     </>
     );            
 };
-
-
-
 
 export default ItemListContainer;

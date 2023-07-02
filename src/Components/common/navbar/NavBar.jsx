@@ -1,8 +1,9 @@
 import CartWidget from '../../../pages/cartwidget/CartWidget';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
+import './navbar-styles.css'
 
-function NavBar(onAdd) {
+function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -13,7 +14,7 @@ function NavBar(onAdd) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <NavLink exact className="nav-link" to="/">Home</NavLink>
+              <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to={ `category/remeras`}>Remeras</NavLink>
@@ -25,7 +26,7 @@ function NavBar(onAdd) {
               <NavLink className="nav-link" to={`category/pantalones`}>Pantalones</NavLink>
             </li>
           </ul>
-          <CartWidget cartCount={onAdd} />
+          <CartWidget />
         </div>
       </div>
     </nav>

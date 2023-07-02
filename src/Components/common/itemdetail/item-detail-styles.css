@@ -1,0 +1,18 @@
+.shop-button{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}

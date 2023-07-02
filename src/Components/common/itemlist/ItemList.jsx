@@ -6,14 +6,14 @@ const ItemList = ({products}) => {
     return(
         <Container>
             <Row>
-                {products.map((product) => (
-                    <Col>
+                {products.map((product,index) => (
+                    <Col key={index}>
                         <Item
                             key={product.id} 
                             id={product.id} 
                             title={product.title} 
                             price={product.price} 
-                            stock={product.stock} 
+                            stock={product.quantity} 
                             img={product.img}/>
                     </Col>
                 ))};
@@ -21,5 +21,7 @@ const ItemList = ({products}) => {
         </Container>
     );
 };
+
+
 
 export default ItemList;
