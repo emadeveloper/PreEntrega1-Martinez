@@ -13,7 +13,7 @@ const ItemList = ({products}) => {
                             id={product.id} 
                             title={product.title} 
                             price={product.price} 
-                            stock={product.quantity} 
+                            stock={product.stock} 
                             img={product.img}/>
                     </Col>
                 ))};

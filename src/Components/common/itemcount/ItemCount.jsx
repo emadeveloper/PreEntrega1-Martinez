@@ -2,11 +2,11 @@ import { Row, Col, Card, Button, Container } from "react-bootstrap";
 import "./item-count-styles.css";
 import { useState } from "react";
 
-const ItemCount = ({ initial, quantity, onAdd }) => {
+const ItemCount = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(initial);
 
   const buttonIncrement = () => {
-    if (count < quantity) {
+    if (count < stock) {
       setCount(count + 1);
     }
   };
@@ -37,7 +37,7 @@ const ItemCount = ({ initial, quantity, onAdd }) => {
           <Button
             className="counter-button"
             variant="secondary"
-            disabled={count >= quantity}
+            disabled={count >= stock}
             onClick={buttonIncrement}
           >
             +
@@ -49,7 +49,7 @@ const ItemCount = ({ initial, quantity, onAdd }) => {
           <Button
             className="shop-button"
             variant="primary"
-            disabled={!quantity}
+            disabled={!stock}
             onClick={() => onAdd(count)}
           >
             Agregar al carrito

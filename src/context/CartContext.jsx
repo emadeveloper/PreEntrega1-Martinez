@@ -13,7 +13,6 @@ export const CartProvider = ({ children }) => {
         })
       );
     } else {
-      console.log('pepito :', item, quantity)
       setCart([...cart, { ...item, quantity }]);
     }
   };

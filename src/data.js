@@ -8,7 +8,7 @@ const data = [
         id: 1,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 15.000",
-        quantity: 20,
+        stock: 20,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos"
@@ -17,7 +17,7 @@ const data = [
         id: 2,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 5.000",
-        quantity: 10,
+        stock: 10,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos"
@@ -26,7 +26,7 @@ const data = [
         id: 3,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 8.000",
-        quantity: 6,
+        stock: 6,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos"
@@ -35,7 +35,7 @@ const data = [
         id: 4,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 6.000",
-        quantity: 13,
+        stock: 13,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos" 
@@ -44,7 +44,7 @@ const data = [
         id: 5,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 9.000",
-        quantity: 19,
+        stock: 19,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos" 
@@ -53,7 +53,7 @@ const data = [
         id: 6,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 12.000",
-        quantity: 6,
+        stock: 6,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos" 
@@ -62,7 +62,7 @@ const data = [
         id: 7,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 15.000",
-        quantity: 18,
+        stock: 18,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos" 
@@ -71,7 +71,7 @@ const data = [
         id: 8,
         title: "Musculosa Universal La Resistencia Fitness",
         price: "$ 18.000",
-        quantity: 30,
+        stock: 30,
         img: imgUno,
         category: "remeras", 
         description: "Una remera flexible lista para que la uses en tus entrenamientos" 
@@ -80,7 +80,7 @@ const data = [
         id: 9,
         title: "Pantalon Universal La Resistencia Fitness",
         price: "$ 5.000",
-        quantity: 4,
+        stock: 4,
         img: imgDos,
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos" 
@@ -89,7 +89,7 @@ const data = [
         id: 10,
         title: "Pantalon Universal La Resistencia Fitness",
         price: "$ 7.000",
-        quantity: 5,
+        stock: 5,
         img: imgDos,
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos"  
@@ -98,7 +98,7 @@ const data = [
         id: 11,
         title: "Pantalon Universal La Resistencia Fitness",
         price: "$ 12.000",
-        quantity: 20,
+        stock: 20,
         img: imgDos,
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos" 
@@ -107,7 +107,7 @@ const data = [
         id: 12,
         title: "Pantalon Universal La Resistencia Fitness",
         price: "$ 15.000",
-        quantity: 19,
+        stock: 19,
         img: imgDos,
         category: "pantalones", 
         description: "El pantalon ideal para tus entrenamientos"  
@@ -116,7 +116,7 @@ const data = [
         id: 13,
         title: "Buzo Universal La Resistencia Fitness",
         price: "$ 18.000",
-        quantity: 6,
+        stock: 6,
         img: imgTres,
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym"  
@@ -125,7 +125,7 @@ const data = [
         id: 14,
         title: "Buzo Universal La Resistencia Fitness",
         price: "$ 8.000",
-        quantity: 10,
+        stock: 10,
         img: imgTres,
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym"
@@ -134,7 +134,7 @@ const data = [
         id: 15,
         title: "Buzo Universal La Resistencia Fitness",
         price: "$ 11.000",
-        quantity: 13,
+        stock: 13,
         img: imgTres,
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym" 
@@ -143,7 +143,7 @@ const data = [
         id: 16,
         title: "Buzo Universal La Resistencia Fitness",
         price: "$ 14.000",
-        quantity: 20,
+        stock: 20,
         img: imgTres,
         category: "buzos", 
         description: "El buzo mas comodo para lucirte en el gym" 

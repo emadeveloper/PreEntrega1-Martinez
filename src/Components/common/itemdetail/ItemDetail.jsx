@@ -18,7 +18,7 @@ const ItemDetail = ({ product } ) => {
     
 
     if (quantity === 0) {
-        footerContent = <ItemCount quantity={product.quantity} initial={1} onAdd={onAdd} />;
+        footerContent = <ItemCount stock={product.stock} initial={1} onAdd={onAdd} />;
     } else {
         footerContent = (
             <>
