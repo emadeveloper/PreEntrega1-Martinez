@@ -14,13 +14,13 @@
 }
 
 .item-cart-button {
-    display: flex;
     border-radius: 5px;
     border: 1px solid #ccc;
     overflow: hidden;
     font-size: 14px;
     font-weight: 600;
     margin: 0 10px;
+    text-decoration: none;
 }
 .item-cart-text{
     padding: 5px;

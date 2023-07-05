@@ -9,7 +9,7 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <div>
+      <div className="checkout-box">
         <h2 className="total-items-title">No hay productos agregados a tu carrito</h2>
         <Link className="shopping-link" to="/">Agrega productos al carrito</Link>
       </div>
@@ -17,7 +17,7 @@ const Cart = () => {
   }
 
   return (
-    <div>
+    <div className="checkout-box">
       {cart.map((product) => (
         <CartItem key={product.id} product={product} />
       ))}

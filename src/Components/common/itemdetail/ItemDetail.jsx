@@ -33,10 +33,11 @@ const ItemDetail = ({ product } ) => {
             <Col key={product.id} md={4}>
                 <Card style={{ width: "18rem" }}>
                     <img className="item-detail-img" src={product.img} alt="t-shirt" />
-                    <Card.Body>
+                    <Card.Body className="card-body">
                         <Card.Title>{product.title}</Card.Title>
-                        <Card.Text>{product.price}</Card.Text>
-                        <Card.Text>{product.description}</Card.Text>
+                        <Card.Title className="card-quantity">Stock disponible: {product.stock}</Card.Title>
+                        <Card.Text className="card-price">Precio: ${product.price}</Card.Text>
+                        <Card.Text className="card-text">{product.description}</Card.Text>
                         <footer>{footerContent}</footer>
                     </Card.Body>
                 </Card>
