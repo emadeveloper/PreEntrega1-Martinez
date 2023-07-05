@@ -27,20 +27,23 @@ export const CartProvider = ({ children }) => {
   };
 
   const getTotalItems = () => {
-    const newLocal = (acc, item) => {
-      return acc + item.quantity;
-    };
-    return cart.reduce(newLocal, 0);
-  }
+    return cart.reduce((acc, item) => acc + item.quantity, 0);
+  };
+
+  const totalPrice = () => {
+    return cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  };
 
   return (
     <CartContext.Provider
       value={{
         cart,
+        isInCart,
         addToCart,
         removeFromCart,
         resetCart,
         getTotalItems,
+        totalPrice,
       }}
     >
       {children}

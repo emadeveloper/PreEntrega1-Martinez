@@ -22,7 +22,7 @@ const ItemDetail = ({ product } ) => {
     } else {
         footerContent = (
             <>
-            <Link to="/cart"><Button className="shop-button" variant="primary">Terminar mi compra</Button></Link>
+            <Link to="/cart"><Button className="shop-button" variant="primary">Proceder al Checkout</Button></Link>
             <Link to="/"><Button className="shop-button" variant="primary">Seguir comprando</Button></Link>
             </>
         );
@@ -32,7 +32,7 @@ const ItemDetail = ({ product } ) => {
         <Row className="justify-content-center align-items-center h-100">
             <Col key={product.id} md={4}>
                 <Card style={{ width: "18rem" }}>
-                    <img src={product.img} alt="t-shirt" />
+                    <img className="item-detail-img" src={product.img} alt="t-shirt" />
                     <Card.Body>
                         <Card.Title>{product.title}</Card.Title>
                         <Card.Text>{product.price}</Card.Text>

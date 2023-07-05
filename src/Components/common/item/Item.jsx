@@ -12,7 +12,7 @@ const Item = (props) => {
                         <Card.Body className='card-body'>
                         <hr />
                             <Card.Title className='card-title'>{props.title}</Card.Title>
-                            <Card.Text className='card-price'>{props.price}</Card.Text>
+                            <Card.Text className='card-price'>Precio: ${props.price}</Card.Text>
                             <hr />
                             <Link className='card-link' to={`/item/${props.id}`}>Ver más detalles del producto</Link>
                             <Card.Text>{`stock disponible: ${props.stock}`}</Card.Text>

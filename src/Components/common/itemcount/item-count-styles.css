@@ -1,9 +1,10 @@
 .counter-button {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 0.2rem;
-    width: 35px;
-    height: 35px;
+    width: 2rem;
+    height: 2rem;
     background-color: #000;
     color: #fff;
     border: none;
@@ -11,4 +12,6 @@
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 800;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
