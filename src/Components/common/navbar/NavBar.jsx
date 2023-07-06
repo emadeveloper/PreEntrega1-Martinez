@@ -1,5 +1,6 @@
 import CartWidget from '../../../pages/cartwidget/CartWidget';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { NavLink } from 'react-router-dom';
 import './navbar-styles.css'
 
