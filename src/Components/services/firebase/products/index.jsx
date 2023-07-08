@@ -1,4 +1,4 @@
-import { doc, getDoc, getDocs, getFirestore, collection,} from "firebase/firestore";
+import { doc, getDoc, getDocs, getFirestore, collection} from "firebase/firestore";
 
 const getProductsFromFirestore = async () => {
   const db = getFirestore();
@@ -16,5 +16,6 @@ const getProductFromFirestore = async (id) => {
   }
   return { id: snapshot.id, ...snapshot.data() };
 };
+
 
 export { getProductsFromFirestore, getProductFromFirestore };

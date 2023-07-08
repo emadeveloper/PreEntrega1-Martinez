@@ -1,7 +1,7 @@
 import Home from "./pages/home";
 import NavBar from "./Components/common/navbar/NavBar";
 import Cart from "./pages/cart/CartView";
-import Checkout from "./pages/checkout";
+import Checkout from "./pages/checkout/checkout";
 import Footer from "./Components/common/footer/Footer";
 import ItemDetailContainer from "./Components/Containers/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
