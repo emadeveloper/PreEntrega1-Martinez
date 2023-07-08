@@ -9,10 +9,9 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     getProductFromFirestore(itemId).then((result) => {
-        setProduct(result);
+      setProduct(result);
     });
-    }, [itemId]);
-
+  }, [itemId]);
 
   return (
     <div>

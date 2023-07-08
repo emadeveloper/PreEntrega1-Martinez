@@ -1,11 +1,11 @@
-import Footer from "./Components/common/footer/Footer";
 import Home from "./pages/home";
 import NavBar from "./Components/common/navbar/NavBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./pages/cart/CartView";
+import Checkout from "./pages/checkout";
+import Footer from "./Components/common/footer/Footer";
 import ItemDetailContainer from "./Components/Containers/ItemDetailContainer";
-import {CartProvider} from "./context/CartContext";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -22,7 +22,7 @@ const firebaseConfig = {
   storageBucket: "coderhouse-52230.appspot.com",
   messagingSenderId: "37850679805",
   appId: "1:37850679805:web:96346fa42fd1a6f7a2f194",
-  measurementId: "G-L1ZSG8F5ZM"
+  measurementId: "G-L1ZSG8F5ZM",
 };
 
 // Initialize Firebase
@@ -33,12 +33,13 @@ function App() {
     <>
       <BrowserRouter>
         <CartProvider>
-          <NavBar/>
+          <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/category/:categoryId" element={<Home />} />
             <Route path="item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={<Cart/>} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />}></Route>
           </Routes>
           <Footer />
         </CartProvider>

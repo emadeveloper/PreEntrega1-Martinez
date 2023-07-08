@@ -8,7 +8,7 @@ const Item = (props) => {
             <Row>
                 <Col key={props.id} md={4}>
                     <Card className='card' style={{ width: '18rem' }}>
-                        <img className='card-image' src={props.img} alt="t-shirt" />
+                        <img className='card-img' src={props.img} alt="t-shirt" />
                         <Card.Body className='card-body'>
                         <hr />
                             <Card.Title className='card-title'>{props.title}</Card.Title>
