@@ -1,32 +1,20 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Badge from 'react-bootstrap/Badge';
+import Cart from "./assets/shopping-cart.svg";
+import "./cart-styles.css";
+import { Link } from 'react-router-dom';
+import {useContext} from "react";
+import {CartContext} from "../../context/CartContext";
 
-const CartWidget = ({ cartCount }) => {
+const CartWidget = () => {
+    const {getTotalItems} = useContext(CartContext);
 return (
-    <div className="cart-widget">
-        <span className="d-none d-sm-inline"><FontAwesomeIcon icon={faShoppingCart} className="cart-icon" /></span>
-        {cartCount > 0 && (
-            <Badge pill bg="danger" className="item-count">{cartCount}</Badge>
-        )}
-            <style jsx>{`
-                .cart-widget {
-                display: inline-block;
-                position: relative;
-                }
-                .cart-icon {
-                color: white;
-                }
-                .item-count {
-                position: absolute;
-                top: -8px;
-                right: -8px;
-                font-size: 12px;
-                }`}
-            </style>
+    <div>
+        <Link to="/cart">
+            <img bg="secondary" className="cart" src= {Cart} alt="widget"/>
+        </Link>
+        <Badge bg="secondary">{getTotalItems()}</Badge>
     </div>
     );
 };
-
 
 export default CartWidget;

@@ -1,30 +1,37 @@
 import ItemDetail from "../common/itemdetail/ItemDetail";
 import { useState, useEffect } from "react";
-import data from "../../data.js"
+import { getProductFromFirestore } from "../services/firebase/products";
 import { useParams } from "react-router-dom";
-
+import { Spinner } from "react-bootstrap";
+import "./container-styles/item-detail-container.css";
 
 const ItemDetailContainer = () => {
-        const [product, setProduct] = useState({});
-        const {itemId} = useParams();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const { itemId } = useParams();
 
-        useEffect(() => {
-            const getProduct = new Promise(resolve => {
-                    setTimeout(() => {
-                        resolve(data);
-                    }, 2000);
-                });
-                getProduct.then(res =>
-                    setProduct(res.find(item => item.id === parseInt(itemId))))
-                
-        },[itemId]);
+  useEffect(() => {
+    getProductFromFirestore(itemId).then((result) => {
+      setProduct(result);
+      setLoading(false);
+    });
+  }, [itemId]);
 
-    
-    return(
-        <div>
-            <ItemDetail product={product} />
-        </div>
-    );
+  return (
+    <div>
+      {loading ? (
+        <div className="loading-spinner">
+          <Spinner className="spinner-custom" animation="border" role="status">
+            <span className="visually-hidden">Cargando...</span>
+            </Spinner>
+            </div>
+            ) : product ? (
+              <ItemDetail product={product} />
+              ) : (<h2 className="item-not-found">El producto no existe</h2>)
+            }
+      
+    </div>
+  );
 };
 
 export default ItemDetailContainer;
